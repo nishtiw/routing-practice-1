@@ -1,0 +1,29 @@
+<div class="regform">
+    <h1 class="text-align">Register</h1>
+    <div>
+      <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+        <div class="float100">
+          <div class="float50">
+            <label for="" id="n">Enter Name: </label>
+          </div>
+          <div class="float50">
+            <input type="text" name="" id="user" placeholder="Enter name" formControlName="user">
+          </div>
+        </div>
+        <div class="float100">
+          <div class="float50">
+            <label for="" id="c">Enter Password: </label>
+          </div>
+          <div class="float50">
+            <input type="password" name="" id="course" placeholder="Enter password" formControlName="course">
+          </div>
+          <div class="button-div">
+            <input type="submit" value="Register" class="button">
+          </div>
+        </div>
+      </form>
+      <!-- <p>User name: {{ loginForm.value }}</p> -->
+      <!-- <p>{{ loginForm.status }}</p> -->
+    </div>
+  </div>
+  
